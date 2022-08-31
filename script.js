@@ -134,8 +134,9 @@ $button.addEventListener('click', function(){
         setTimeout(() => {
             $contentConfirm.style = 'top: -50px';
         }, 5 * 1000);
-        
+
     } else {
+        
         $contentConfirm.style = 'top: 30px';
         $confirmText.innerHTML = "Please select an option.";
         setTimeout(() => {
