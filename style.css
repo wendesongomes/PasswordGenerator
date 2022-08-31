@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #08070c;
+    gap: 15px;
+}
+
+body h1{
+    color: #615f6c;
+    font-size: 19px;
+}
+
+#contentInfo{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #93da9b;
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    top: -50px;
+    transition:0.6s;
+}
+
+
+
+.password, .content{
+    background-color: #24232b;
+    width: 400px;
+}
+
+.password{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.password p, i{
+    padding: 20px;
+    font-size: 20px;
+}
+
+.password p{
+    color: #504f57;
+}
+
+.password i{
+    color: #aafcb4;
+    cursor: pointer;
+}
+
+.password i:hover{
+    color: white;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    gap: 20px;
+}
+
+.content .contentText{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.content .contentText p:nth-child(1){
+    color: white;
+    font-size: 15px;
+}
+
+.content .contentText p:nth-child(2){
+    color: #aafcb4;
+    font-size: 20px;
+}
+
+.content #rangeID{
+    all: unset;
+    width: 90%;
+    margin: 0 auto;
+    height: 15px;
+    margin-bottom: 10px;
+}
+
+.content #rangeID::-webkit-slider-thumb{
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #e3e2e7;
+    cursor: pointer;
+}
+
+.content #rangeID::-webkit-slider-thumb:hover{
+    background-color: #08070c;
+    border: 1px solid #aafcb4;
+}
+
+
+.content .checkboxClass{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: white;
+    margin-left: 17px;
+}
+
+.content .checkboxClass input{
+    all: unset;
+    border: 2px solid white;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.content .checkboxClass input:hover{
+    border: 2px solid #aafcb4;
+}
+
+.content .checkboxClass input:checked{
+    background-color: #aafcb4;
+}
+
+.content .checkboxClass input:checked::after{
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 6px;
+    background-color: black;
+    color: black;
+    display: block;
+    transform: rotate(-45deg);
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.content .checkboxClass input:checked::before{
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 10px;
+    background-color: black;
+    color: black;
+    display: block;
+    transform: rotate(45deg);
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+
+.content .contentStrength{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: #18171f;
+    width: 90%;
+    margin: auto;
+}
+
+.content .contentStrength p{
+    color: #615f6c;
+}
+
+.content .contentStrength div p{
+    color: white;
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: 700;
+    text-align: center;
+    width: 50px;
+}
+
+.content .contentStrength div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.content .contentStrength div label{
+    display: block;
+    width: 10px;
+    height: 25px;
+    border: solid 1px white;
+}
+
+.content button{
+    width: 90%;
+    margin: auto auto;
+    height: 50px;
+    margin-bottom: 30px;
+    background-color: #aafcb4;
+    color: #08070c;
+    cursor: pointer;
+    border: none;
+    transition: 0.6s;
+}
+
+.content button:hover{
+    background-color: #08070c;
+    color: #93da9b;
+    border: 1px solid #93da9b;
+}
+
+.content button:hover::before{
+    border-color: #93da9b;
+}
+
+.content button:hover::after{
+    background-color: #93da9b;
+}
+
+.content button::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 11px;
+    height: 2px;
+    background-color: #08070c;
+    margin: -9px 220px;
+}
+
+.content button::before{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-style: solid;
+    border-color: #08070c;
+    border-right: 1px;
+    border-top: 0.1px;
+    margin: 6px 225px;
+    transform: rotate(-135deg);
+}
+

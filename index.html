@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Ubuntu+Mono:wght@700&display=swap" rel="stylesheet">
+
+    <title>Password Generate</title>
+</head>
+<body>
+
+    <div id="contentInfo">
+        <p id="confirm"></p>
+    </div>
+
+    <h1>Password Generator</h1>
+    <div class="password">
+        <p id="passwordOutput">P4$5W0rD!</p>
+        <i class="fa-regular fa-copy" id="copy" onclick="copy()"></i>
+    </div>
+
+    <div class="content">
+        <div class="contentText">
+            <p>Character Length</p>
+            <p id="lenghtID">0</p>
+        </div>
+        <input type="range" name="" id="rangeID" min="5" max="20" value="0">
+        <div class="checkboxClass">
+            <input type="checkbox" name="" id="uppercaseID">
+            <label for="uppercaseID">Include Uppercase Letters</label>
+        </div>
+        <div class="checkboxClass">
+            <input type="checkbox" name="" id="LowercaseID">
+            <label for="LowercaseID">Include Lowercase Letters</label>
+        </div>
+        <div class="checkboxClass">
+            <input type="checkbox" name="" id="NumbersID">
+            <label for="NumbersID">Include Numbers</label>
+        </div>
+        <div class="checkboxClass">
+            <input type="checkbox" name="" id="SymbolsID">
+            <label for="SymbolsID">Include Symbols</label>
+        </div>
+
+        <div class="contentStrength">
+            <p>STRENGTH</p>
+            <div>
+                <p id="strengthText"></p>
+                <label id="labelOne"></label>
+                <label id="labelTwo"></label>
+                <label id="labelThree"></label>
+                <label id="labelFour"></label>
+            </div>
+        </div>
+
+        <button id="generate">GENERATE</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/39c9efb965.js" crossorigin="anonymous"></script>
+</body>
+</html>
